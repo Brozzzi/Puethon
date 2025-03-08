@@ -1,0 +1,10 @@
+{
+    "iconDefinitions": {
+        "file-icon": {
+            "iconPath": "./fileicons/icon.png"
+        }
+    },
+    "fileExtensions": {
+        "pü": "file-icon"
+    }
+}

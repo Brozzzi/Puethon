@@ -1,0 +1,44 @@
+{
+    "name": "puethon",
+    "displayName": "Püthon",
+    "description": "Deutsche Syntax für Python in VSCodium",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.75.0"
+    },
+    "categories": ["Programming Languages"],
+    "contributes": {
+        "languages": [
+            {
+                "id": "püthon",
+                "aliases": ["Püthon", "pü"],
+                "extensions": [".pü"],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "püthon",
+                "scopeName": "source.püthon",
+                "path": "./syntaxes/puethon.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "püthon",
+                "path": "./snippets/puethon.json"
+            }
+        ],
+        "iconThemes": [
+            {
+                "id": "puethon-icons",
+                "label": "Püthon Icons",
+                "path": "./fileicons.json"
+            }
+        ],
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/Brozzzi/Puethon-VSCode-Extension"
+        }
+    }
+}

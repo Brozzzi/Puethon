@@ -1,0 +1,50 @@
+{
+    "scopeName": "source.püthon",
+    "name": "Püthon",
+    "patterns": [
+        {
+            "name": "keyword.control.flow.püthon",
+            "match": "\\b(wenn|sonst|sowenn)\\b"
+        },
+        {
+            "name": "keyword.control.loop.püthon",
+            "match": "\\b(für|während)\\b"
+        },
+        {
+            "name": "keyword.operator.logical.püthon",
+            "match": "\\b(und|oder|nicht)\\b"
+        },
+        {
+            "name": "storage.type.class.püthon",
+            "match": "\\b(klasse)\\b"
+        },
+        {
+            "name": "storage.type.function.püthon",
+            "match": "\\b(definiere)\\b"
+        },
+        {
+            "name": "variable.language.püthon",
+            "match": "\\b(Wahr|Falsch|Nichts)\\b"
+        },
+        {
+            "name": "constant.language.püthon",
+            "match": "\\b(True|False|None)\\b"
+        },
+        {
+            "name": "string.quoted.double.püthon",
+            "match": "\"(?:[^\"\\\\]|\\\\.)*\""
+        },
+        {
+            "name": "string.quoted.single.püthon",
+            "match": "'(?:[^'\\\\]|\\\\.)*'"
+        },
+        {
+            "name": "constant.numeric.püthon",
+            "match": "\\b\\d+\\b"
+        },
+        {
+            "name": "comment.line.püthon",
+            "match": "#.*$"
+        }
+    ]
+}

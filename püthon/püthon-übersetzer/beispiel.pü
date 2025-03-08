@@ -1,0 +1,20 @@
+definiere test_funktion():
+    drucke("Hallo Welt")
+    wenn Wahr:
+        drucke("Das ist wahr!")
+    sonst:
+        drucke("Das ist falsch!")
+
+test_funktion()
+
+definiere if_else_elif():
+    
+    x = 1
+
+    während x < 10:
+        x + 1
+
+    ausgabe x
+    drucke(x)
+
+if_else_elif()
