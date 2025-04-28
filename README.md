@@ -6,7 +6,7 @@ Erlebe Programmieren in vertrauten Worten.
 ## Installation
 
 ```bash
-git clone https://dein-repo-link.git
+git clone https://github.com/Brozzzi/Puethon/tree/main
 cd püthon
 pip install .
 
