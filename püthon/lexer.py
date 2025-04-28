@@ -1,0 +1,55 @@
+import re
+
+KEYWORDS = {
+    'wenn': 'if',
+    'sowenn': 'elif',
+    'sonst': 'else',
+    'für': 'for',
+    'solange': 'while',
+    'unterbreche': 'break',
+    'fortsetzen': 'continue',
+    'versuche': 'try',
+    'ausgenommen': 'except',
+    'endlich': 'finally',
+    'erhebe': 'raise',
+    'behaupte': 'assert',
+    'mit': 'with',
+    'als': 'as',
+    'definiere': 'def',
+    'klasse': 'class',
+    'ausgabe': 'return',
+    'ergebe': 'yield',
+    'importiere': 'import',
+    'aus': 'from',
+    'erlasse': 'pass',
+    'entferne': 'del',
+    'weltweit': 'global',
+    'außerhalb': 'nonlocal',
+    'lambda': 'lambda',
+    'Wahr': 'True',
+    'Falsch': 'False',
+    'Nichts': 'None',
+    'und': 'and',
+    'oder': 'or',
+    'nicht': 'not',
+    'ist': 'is',
+    'in': 'in',
+    'int': 'int',
+    'float': 'float',
+    'komplex': 'complex',
+    'string': 'str',
+    'bytes': 'bytes',
+    'bytearray': 'bytearray',
+    'bool': 'bool',
+    'liste': 'list',
+    'tupel': 'tuple',
+    'setze': 'set',
+    'wörterbuch': 'dict',
+    'drucke': 'print',
+}
+
+def tokenize(code):
+    for german, english in KEYWORDS.items():
+        pattern = r'\b' + re.escape(german) + r'\b'
+        code = re.sub(pattern, english, code)
+    return code

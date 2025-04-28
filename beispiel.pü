@@ -1,0 +1,4 @@
+definiere hallo():
+    drucke("Hallo Welt!")
+
+hallo()
